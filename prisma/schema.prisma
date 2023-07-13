@@ -7,8 +7,7 @@ generator client {
 
 datasource db {
     provider     = "mysql"
-    //   url = env("DATABASE_URL")
-    url          = "mysql://b2wkpm5nsa4ts18lpxcm:pscale_pw_4YynjOJ3lLDZCMgbY1jZt3b3crH9FLYjdDhKvskWrIB@aws.connect.psdb.cloud/twitter?sslaccept=strict"
+    url          = env("DATABASE_URL")
     relationMode = "prisma"
 }
 
